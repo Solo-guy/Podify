@@ -1,5 +1,6 @@
-import { Model, ObjectId, Schema, model } from "mongoose";
+import { Model, model, ObjectId, Schema } from "mongoose";
 
+// interface (typescript)
 interface UserDocument {
   name: string;
   email: string;
@@ -9,7 +10,7 @@ interface UserDocument {
   tokens: string[];
   favorites: ObjectId[];
   followers: ObjectId[];
-  following: ObjectId[];
+  followings: ObjectId[];
 }
 
 const userSchema = new Schema<UserDocument>(
@@ -50,7 +51,7 @@ const userSchema = new Schema<UserDocument>(
         ref: "User",
       },
     ],
-    following: [
+    followings: [
       {
         type: Schema.Types.ObjectId,
         ref: "User",
