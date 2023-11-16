@@ -18,3 +18,5 @@ export const CreateUserSchema = yup.object().shape({
       "Password are to simple!"
     ),
 });
+
+export const Emailverificationbody = yup.object().shape({});
