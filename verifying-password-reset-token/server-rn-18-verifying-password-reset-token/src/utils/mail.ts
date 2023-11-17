@@ -1,15 +1,17 @@
 import nodemailer from "nodemailer";
 import path from "path";
 
+import User from "#/models/user";
 import EmailVerificationToken from "#/models/emailVerificationToken";
 import {
   MAILTRAP_PASS,
   MAILTRAP_USER,
-  VERIFICARIONEMAIL,
+  VERIFICATION_EMAIL,
 } from "#/utils/variables";
+import { generateToken } from "#/utils/helper";
 import { generateTemplate } from "#/mail/template";
 
-const generateMailTransported = () => {
+const generateMailTransporter = () => {
   const transport = nodemailer.createTransport({
     host: "sandbox.smtp.mailtrap.io",
     port: 2525,
@@ -18,25 +20,26 @@ const generateMailTransported = () => {
       pass: MAILTRAP_PASS,
     },
   });
+
   return transport;
 };
 
 interface Profile {
-  name: String;
-  email: String;
-  userId: String;
+  name: string;
+  email: string;
+  userId: string;
 }
 
 export const sendVerificationMail = async (token: string, profile: Profile) => {
-  const transport = generateMailTransported();
+  const transport = generateMailTransporter();
 
   const { name, email, userId } = profile;
 
-  const welcomeMessage = `Hi ${name}, welcome to Podify! There are so much thing that we do for verified users. Use the given OTP to verify your mail.`;
+  const welcomeMessage = `Hi ${name}, welcome to Podify! There are so much thing that we do for verified users. Use the given OTP to verify your email.`;
 
   transport.sendMail({
     to: email,
-    from: VERIFICARIONEMAIL,
+    from: VERIFICATION_EMAIL,
     subject: "Welcome message",
     html: generateTemplate({
       title: "Welcome to Podify",
@@ -61,22 +64,22 @@ export const sendVerificationMail = async (token: string, profile: Profile) => {
   });
 };
 
-interface Option {
+interface Options {
   email: string;
   link: string;
 }
 
-export const sendForgetPasswordLink = async (options: Option) => {
-  const transport = generateMailTransported();
+export const sendForgetPasswordLink = async (options: Options) => {
+  const transport = generateMailTransporter();
 
   const { email, link } = options;
 
   const message =
-    "We just received a request that you forgot your password. No prolem you can use the link below and create brand new password.";
+    "We just received a request that you forgot your password. No problem you can use the link below and create brand new password.";
 
   transport.sendMail({
     to: email,
-    from: VERIFICARIONEMAIL,
+    from: VERIFICATION_EMAIL,
     subject: "Reset Password Link",
     html: generateTemplate({
       title: "Forget Password",
