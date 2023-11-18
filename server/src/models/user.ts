@@ -13,7 +13,6 @@ interface UserDocument {
   followers: ObjectId[];
   followings: ObjectId[];
 }
-
 interface Methods {
   comparePassword(password: string): Promise<boolean>;
 }
@@ -68,14 +67,15 @@ const userSchema = new Schema<UserDocument, {}, Methods>(
 );
 
 userSchema.pre("save", async function (next) {
-  //hash the token
+  // hash the token
   if (this.isModified("password")) {
     this.password = await hash(this.password, 10);
   }
+
   next();
 });
 
-userSchema.methods.compareToken = async function (password) {
+userSchema.methods.comparePassword = async function (password) {
   const result = await compare(password, this.password);
   return result;
 };

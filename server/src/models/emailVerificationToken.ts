@@ -36,10 +36,11 @@ const emailVerificationTokenSchema = new Schema<
 });
 
 emailVerificationTokenSchema.pre("save", async function (next) {
-  //hash the token
+  // hash the token
   if (this.isModified("token")) {
     this.token = await hash(this.token, 10);
   }
+
   next();
 });
 
