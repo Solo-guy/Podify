@@ -7,6 +7,7 @@ export interface CreateUser extends Request {
     password: string;
   };
 }
+
 export interface VerifyEmailRequest extends Request {
   body: {
     userId: string;
