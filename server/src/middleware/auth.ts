@@ -33,7 +33,7 @@ export const mustAuth: RequestHandler = async (req, res, next) => {
   const user = await User.findOne({ _id: id, tokens: token });
   if (!user) return res.status(403).json({ error: "Unauthorized request!" });
 
-  (req.user = {
+  req.user = {
     id: user._id,
     name: user.name,
     email: user.email,
@@ -41,6 +41,7 @@ export const mustAuth: RequestHandler = async (req, res, next) => {
     avatar: user.avatar?.url,
     followers: user.followers.length,
     followings: user.followings.length,
-  }),
-    next();
+  };
+  req.token = token;
+  next();
 };

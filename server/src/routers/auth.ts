@@ -2,11 +2,14 @@ import {
   create,
   generateForgetPasswordLink,
   grantValid,
+  logOut,
+  sendProfile,
   sendReVerificationToken,
   signIn,
   updatePassword,
+  updateProfile,
   verifyEmail,
-} from "#/controllers/user";
+} from "#/controllers/auth";
 import { isValidPassResetToken, mustAuth } from "#/middleware/auth";
 import { validate } from "#/middleware/validator";
 import {
@@ -17,7 +20,7 @@ import {
 } from "#/utils/validationSchema";
 
 import { Router } from "express";
-import fileParser, { RequestWithFiles } from "#/middleware/fileParser";
+import fileParser from "#/middleware/fileParser";
 
 const router = Router();
 
@@ -38,15 +41,9 @@ router.post(
   updatePassword
 );
 router.post("/sign-in", validate(SignInValidationSchema), signIn);
-router.get("/is-auth", mustAuth, (req, res) => {
-  res.json({
-    profile: req.user,
-  });
-});
+router.get("/is-auth", mustAuth, sendProfile);
 
-router.post("/update-profile", fileParser, (req: RequestWithFiles, res) => {
-  console.log(req.files);
-  res.json({ oke: true });
-});
+router.post("/update-profile", mustAuth, fileParser, updateProfile);
+router.post("/log-out", mustAuth, logOut);
 
 export default router;
