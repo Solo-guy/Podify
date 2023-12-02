@@ -16,6 +16,7 @@ declare global {
     }
   }
 }
+
 export interface CreateUser extends Request {
   body: {
     name: string;

@@ -1,9 +1,11 @@
 import { RequestHandler } from "express";
-import { ObjectId, isValidObjectId } from "mongoose";
+import { isValidObjectId, ObjectId, PipelineStage } from "mongoose";
 import User from "#/models/user";
 import { paginationQuery } from "#/@types/misc";
 import Audio, { AudioDocument } from "#/models/audio";
 import Playlist from "#/models/playlist";
+import History from "#/models/history";
+import moment from "moment";
 
 export const updateFollower: RequestHandler = async (req, res) => {
   const { profileId } = req.params;
@@ -93,7 +95,7 @@ export const getPublicUploads: RequestHandler = async (req, res) => {
   const { profileId } = req.params;
 
   if (!isValidObjectId(profileId))
-    return res.status(422).json({ error: "Invalid profile ID!" });
+    return res.status(422).json({ error: "Invalid profile id!" });
 
   const data = await Audio.find({ owner: profileId })
     .skip(parseInt(limit) * parseInt(pageNo))
@@ -120,15 +122,14 @@ export const getPublicProfile: RequestHandler = async (req, res) => {
   const { profileId } = req.params;
 
   if (!isValidObjectId(profileId))
-    return res.status(422).json({ error: "Invalid profile ID!" });
+    return res.status(422).json({ error: "Invalid profile id!" });
 
   const user = await User.findById(profileId);
-
-  if (!user) return res.status(422).json({ error: "user not found!" });
+  if (!user) return res.status(422).json({ error: "User not found!" });
 
   res.json({
     profile: {
-      id: user.id,
+      id: user._id,
       name: user.name,
       followers: user.followers.length,
       avatar: user.avatar?.url,
@@ -163,4 +164,80 @@ export const getPublicPlaylist: RequestHandler = async (req, res) => {
       };
     }),
   });
+};
+
+export const getRecommendByProfile: RequestHandler = async (req, res) => {
+  const user = req.user;
+
+  let matchOptions: PipelineStage.Match = {
+    $match: { _id: { $exists: true } },
+  };
+
+  if (user) {
+    // then we want to send by the profile
+
+    // fetch users previous history
+    const usersPreviousHistory = await History.aggregate([
+      { $match: { owner: user.id } },
+      { $unwind: "$all" },
+      {
+        $match: {
+          "all.date": {
+            // only those histories which are not older than 30 days
+            $gte: moment().subtract(30, "days").toDate(),
+          },
+        },
+      },
+      { $group: { _id: "$all.audio" } },
+      {
+        $lookup: {
+          from: "audios",
+          localField: "_id",
+          foreignField: "_id",
+          as: "audioData",
+        },
+      },
+      { $unwind: "$audioData" },
+      { $group: { _id: null, category: { $addToSet: "$audioData.category" } } },
+    ]);
+
+    const categories = usersPreviousHistory[0].category;
+    if (categories.length) {
+      matchOptions = { $match: { category: { $in: categories } } };
+    }
+  }
+
+  // otherwise we will send generic audios
+  const audios = await Audio.aggregate([
+    matchOptions,
+    {
+      $sort: {
+        "likes.count": -1,
+      },
+    },
+    { $limit: 10 },
+    {
+      $lookup: {
+        from: "users",
+        localField: "owner",
+        foreignField: "_id",
+        as: "owner",
+      },
+    },
+    { $unwind: "$owner" },
+    {
+      $project: {
+        _id: 0,
+        id: "$_id",
+        title: "$title",
+        category: "$category",
+        about: "$about",
+        file: "$file.url",
+        poster: "$poster.url",
+        owner: { name: "$owner.name", id: "$owner._id" },
+      },
+    },
+  ]);
+
+  res.json({ audios });
 };

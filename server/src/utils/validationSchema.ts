@@ -83,15 +83,14 @@ export const NewPlaylistValidationSchema = yup.object().shape({
 
 export const OldPlaylistValidationSchema = yup.object().shape({
   title: yup.string().required("Title is missing!"),
-  //this is going to validate the audio id
+  // this is going to validate the audio id
   item: yup.string().transform(function (value) {
     return this.isType(value) && isValidObjectId(value) ? value : "";
   }),
-  //this is going to validate the playlist id
+  // this is going to validate the playlist id
   id: yup.string().transform(function (value) {
     return this.isType(value) && isValidObjectId(value) ? value : "";
   }),
-
   visibility: yup
     .string()
     .oneOf(["public", "private"], "Visibility must be public or private!"),
@@ -104,7 +103,7 @@ export const UpdateHistorySchema = yup.object().shape({
     .transform(function (value) {
       return this.isType(value) && isValidObjectId(value) ? value : "";
     })
-    .required("Invalid audio Id!"),
+    .required("Invalid audio id!"),
   progress: yup.number().required("History progress is missing!"),
   date: yup
     .string()

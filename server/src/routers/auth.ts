@@ -18,7 +18,6 @@ import {
   TokenAndIDValidation,
   UpdatePasswordSchema,
 } from "#/utils/validationSchema";
-
 import { Router } from "express";
 import fileParser from "#/middleware/fileParser";
 

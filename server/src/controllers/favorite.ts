@@ -90,7 +90,7 @@ export const getFavorites: RequestHandler = async (req, res) => {
   res.json({ audios });
 };
 
-export const getIsFavorites: RequestHandler = async (req, res) => {
+export const getIsFavorite: RequestHandler = async (req, res) => {
   const audioId = req.query.audioId as string;
 
   if (!isValidObjectId(audioId))

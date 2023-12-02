@@ -1,4 +1,4 @@
-import { Model, ObjectId, Schema, model, models } from "mongoose";
+import { Model, model, models, ObjectId, Schema } from "mongoose";
 
 interface PlaylistDocument {
   title: string;
@@ -34,6 +34,6 @@ const playlistSchema = new Schema<PlaylistDocument>(
   { timestamps: true }
 );
 
-const Playlist = models.Playlist || model("playlist", playlistSchema);
+const Playlist = models.Playlist || model("Playlist", playlistSchema);
 
 export default Playlist as Model<PlaylistDocument>;

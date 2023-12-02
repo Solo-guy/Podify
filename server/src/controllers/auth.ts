@@ -14,6 +14,7 @@ import PasswordResetToken from "#/models/passwordResetToken";
 import { isValidObjectId } from "mongoose";
 import crypto from "crypto";
 import { JWT_SECRET, PASSWORD_RESET_LINK } from "#/utils/variables";
+import { RequestWithFiles } from "#/middleware/fileParser";
 import cloudinary from "#/cloud";
 import formidable from "formidable";
 
@@ -172,12 +173,16 @@ export const signIn: RequestHandler = async (req, res) => {
     token,
   });
 };
-export const updateProfile: RequestHandler = async (req, res) => {
+
+export const updateProfile: RequestHandler = async (
+  req: RequestWithFiles,
+  res
+) => {
   const { name } = req.body;
   const avatar = req.files?.avatar as formidable.File;
 
   const user = await User.findById(req.user.id);
-  if (!user) throw new Error("Something went wrong, user not found!");
+  if (!user) throw new Error("something went wrong, user not found!");
 
   if (typeof name !== "string")
     return res.status(422).json({ error: "Invalid name!" });
@@ -188,12 +193,12 @@ export const updateProfile: RequestHandler = async (req, res) => {
   user.name = name;
 
   if (avatar) {
-    //if there is already an avatar file, we want to remove that
+    // if there is already an avatar file, we want to remove that
     if (user.avatar?.publicId) {
       await cloudinary.uploader.destroy(user.avatar?.publicId);
     }
 
-    //upload new avatar file
+    // upload new avatar file
     const { secure_url, public_id } = await cloudinary.uploader.upload(
       avatar.filepath,
       {
@@ -221,9 +226,9 @@ export const logOut: RequestHandler = async (req, res) => {
 
   const token = req.token;
   const user = await User.findById(req.user.id);
-  if (!user) throw new Error("Something went wrong, user not found!");
+  if (!user) throw new Error("something went wrong, user not found!");
 
-  //logout from all
+  // logout from all
   if (fromAll === "yes") user.tokens = [];
   else user.tokens = user.tokens.filter((t) => t !== token);
 
