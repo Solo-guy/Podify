@@ -1,11 +1,7 @@
-import {View, Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 
 const App = () => {
-  return (
-    <View>
-      <Text>hello</Text>
-    </View>
-  );
+  return <SafeAreaView></SafeAreaView>;
 };
 
 export default App;
