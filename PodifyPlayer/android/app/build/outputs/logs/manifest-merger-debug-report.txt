@@ -8,6 +8,8 @@ MERGED from C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\55924044f61da701b945187055c42a6e\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\4707cb82c256d6192936de196995e0b0\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
+MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.4] C:\Users\M15R5\.gradle\caches\transforms-3\ad027df5cc0252cf290d9cc32e3d3e29\transformed\jetified-react-android-0.71.4-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\db9edded7447590027222fff8317cb2b\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:hermes-android:0.71.4] C:\Users\M15R5\.gradle\caches\transforms-3\9a6e311c63f5c9b3b5b18021253f5e81\transformed\jetified-hermes-android-0.71.4-debug\AndroidManifest.xml:2:1-9:12
@@ -42,6 +44,7 @@ MERGED from [com.facebook.fresco:middleware:2.6.0] C:\Users\M15R5\.gradle\caches
 MERGED from [com.facebook.fresco:ui-common:2.6.0] C:\Users\M15R5\.gradle\caches\transforms-3\447e1576c9c220548fb9dab8396dd964\transformed\jetified-ui-common-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\07617c8012dbbfb5aace9f023fd31899\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\528be2abd3ef2be552539bae26fe8757\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ff041a38e89dfed51d8448fdb25262bd\transformed\transition-1.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\a79e470f0625cbb7878354573cf17881\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\d58724a3660e4705954fe8f723579f68\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\dadd5839f50e0dbf859d3b5986c5411f\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -163,6 +166,10 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\M15R5\
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\4707cb82c256d6192936de196995e0b0\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.4] C:\Users\M15R5\.gradle\caches\transforms-3\ad027df5cc0252cf290d9cc32e3d3e29\transformed\jetified-react-android-0.71.4-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.4] C:\Users\M15R5\.gradle\caches\transforms-3\ad027df5cc0252cf290d9cc32e3d3e29\transformed\jetified-react-android-0.71.4-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\db9edded7447590027222fff8317cb2b\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -231,6 +238,8 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\M15
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\07617c8012dbbfb5aace9f023fd31899\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\528be2abd3ef2be552539bae26fe8757\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\528be2abd3ef2be552539bae26fe8757\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ff041a38e89dfed51d8448fdb25262bd\transformed\transition-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ff041a38e89dfed51d8448fdb25262bd\transformed\transition-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\a79e470f0625cbb7878354573cf17881\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\a79e470f0625cbb7878354573cf17881\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\d58724a3660e4705954fe8f723579f68\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
