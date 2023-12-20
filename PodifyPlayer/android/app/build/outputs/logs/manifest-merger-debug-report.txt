@@ -10,6 +10,7 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\M15R5\
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
 MERGED from [:react-native-async-storage_async-storage] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-document-picker] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-document-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-pager-view] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -55,8 +56,8 @@ MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\M15R5\.gradle\caches\transfo
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\a79e470f0625cbb7878354573cf17881\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\d58724a3660e4705954fe8f723579f68\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\dadd5839f50e0dbf859d3b5986c5411f\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ce10460e0c89321b29bd57d8b5cc5004\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\bcc46d5836f96ed639a2250a139d8036\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\M15R5\.gradle\caches\transforms-3\0c62d21b126e2deaf39d5aeca31db9be\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\99282858d7e974f79a1f41987c0262b8\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -65,8 +66,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\M15R5\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\14246dcd4254ac611cb94a9b37c91918\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\5dc5795add86fd832b100b6225308e68\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\7c91de7d7f7ba15a2ffb238aab44e899\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\M15R5\.gradle\caches\transforms-3\e1040b4444f0dd18e489d1e257f9c53f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\578cd670ad8670706394edb27cef2181\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\568e9f2d77076bf6388872bb71ab142b\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\68216959d7d61710201031be71c804ed\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -182,6 +183,8 @@ MERGED from [:react-native-async-storage_async-storage] C:\Users\M15R5\OneDrive\
 MERGED from [:react-native-async-storage_async-storage] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-document-picker] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-document-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-document-picker] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-document-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pager-view] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pager-view] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-pager-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -272,10 +275,10 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\M15R5\.gradle\ca
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\d58724a3660e4705954fe8f723579f68\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\dadd5839f50e0dbf859d3b5986c5411f\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\dadd5839f50e0dbf859d3b5986c5411f\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ce10460e0c89321b29bd57d8b5cc5004\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\ce10460e0c89321b29bd57d8b5cc5004\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\f21851bef8ac1b4ee27a5413fa240b27\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\bcc46d5836f96ed639a2250a139d8036\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\bcc46d5836f96ed639a2250a139d8036\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\M15R5\.gradle\caches\transforms-3\0c62d21b126e2deaf39d5aeca31db9be\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -292,10 +295,10 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\M15R5\.gradle\caches
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\M15R5\.gradle\caches\transforms-3\5dc5795add86fd832b100b6225308e68\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\7c91de7d7f7ba15a2ffb238aab44e899\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\7c91de7d7f7ba15a2ffb238aab44e899\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\M15R5\.gradle\caches\transforms-3\e1040b4444f0dd18e489d1e257f9c53f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\M15R5\.gradle\caches\transforms-3\e1040b4444f0dd18e489d1e257f9c53f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\e1e9960e1684ca7800f071cab2d34885\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\578cd670ad8670706394edb27cef2181\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\578cd670ad8670706394edb27cef2181\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\M15R5\.gradle\caches\transforms-3\568e9f2d77076bf6388872bb71ab142b\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41

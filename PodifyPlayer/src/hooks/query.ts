@@ -43,12 +43,7 @@ export const useFetchRecommendedAudios = () => {
 
 const fetchPlaylist = async (): Promise<Playlist[]> => {
   const client = await getClient();
-  const token = await getFromAsyncStorage(Keys.AUTH_TOKEN);
-  const {data} = await client('/playlist/by-profile', {
-    headers: {
-      Authorization: 'Bearer ' + token,
-    },
-  });
+  const {data} = await client('/playlist/by-profile');
   return data.playlist;
 };
 
@@ -56,6 +51,40 @@ export const useFetchPlaylist = () => {
   const dispatch = useDispatch();
   return useQuery(['playlist'], {
     queryFn: () => fetchPlaylist(),
+    onError(err) {
+      const errorMessage = catchAsyncError(err);
+      dispatch(upldateNotification({message: errorMessage, type: 'error'}));
+    },
+  });
+};
+
+const fetchUploadsByProfile = async (): Promise<AudioData[]> => {
+  const client = await getClient();
+  const {data} = await client('/profile/uploads');
+  return data.audios;
+};
+
+export const useFetchUploadsByProfile = () => {
+  const dispatch = useDispatch();
+  return useQuery(['uploads-by-profile'], {
+    queryFn: () => fetchUploadsByProfile(),
+    onError(err) {
+      const errorMessage = catchAsyncError(err);
+      dispatch(upldateNotification({message: errorMessage, type: 'error'}));
+    },
+  });
+};
+
+const fetchFavorites = async (): Promise<AudioData[]> => {
+  const client = await getClient();
+  const {data} = await client('/favorite');
+  return data.audios;
+};
+
+export const useFetchFavorite = () => {
+  const dispatch = useDispatch();
+  return useQuery(['favorite'], {
+    queryFn: () => fetchFavorites(),
     onError(err) {
       const errorMessage = catchAsyncError(err);
       dispatch(upldateNotification({message: errorMessage, type: 'error'}));

@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // react-native-document-picker
 import com.reactnativedocumentpicker.DocumentPickerPackage;
+// react-native-pager-view
+import com.reactnativepagerview.PagerViewPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -70,6 +72,7 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
       new DocumentPickerPackage(),
+      new PagerViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
