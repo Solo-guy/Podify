@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.podifyplayer.app-mergeDebugResources-27:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.podifyplayer.app-mergeDebugResources-29:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\M15R5\\.gradle\\caches\\transforms-3\\380fe58bf6c527a4ee00ff107d224565\\transformed\\material-1.1.0\\res\\values-night-v8\\values-night-v8.xml",

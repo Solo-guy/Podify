@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.podifyplayer.app-mergeDebugResources-27:/values-it/values-it.xml",
+            "outputFile": "com.podifyplayer.app-mergeDebugResources-29:/values-it/values-it.xml",
             "map": [
                 {
                     "source": "C:\\Users\\M15R5\\.gradle\\caches\\transforms-3\\2df373b9327185da857aa9641682c512\\transformed\\appcompat-1.4.1\\res\\values-it\\values-it.xml",
@@ -28,6 +28,23 @@
                         "startOffsets": "2881",
                         "endColumns": "100",
                         "endOffsets": "2977"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\M15R5\\.gradle\\caches\\transforms-3\\318a7d2691240c921f6f630febf43d41\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-it\\values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,120,179",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "115,174,225"
+                    },
+                    "to": {
+                        "startLines": "31,32,33",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "2982,3047,3106",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "3042,3101,3152"
                     }
                 }
             ]
