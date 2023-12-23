@@ -33,6 +33,10 @@ const useAudioController = () => {
   const dispatch = useDispatch();
 
   const isPalyerReady = playbackState !== State.None;
+  const isPalying = playbackState === State.Playing;
+  const isPaused = playbackState === State.Paused;
+  const isBusy =
+    playbackState === State.Buffering || playbackState === State.Connecting;
 
   const onAudioPress = async (item: AudioData, data: AudioData[]) => {
     if (!isPalyerReady) {
@@ -74,7 +78,59 @@ const useAudioController = () => {
     }
   };
 
-  return {onAudioPress};
+  const togglePlayPause = async () => {
+    if (isPalying) await TrackPlayer.pause();
+    if (isPaused) await TrackPlayer.play();
+  };
+
+  const seekTo = async (position: number) => {
+    await TrackPlayer.seekTo(position);
+  };
+
+  const skipTo = async (sec: number) => {
+    const currentPosition = await TrackPlayer.getPosition();
+    await TrackPlayer.seekTo(currentPosition + sec);
+  };
+
+  const onNextPress = async () => {
+    const currentList = await TrackPlayer.getQueue();
+    const currentIndex = await TrackPlayer.getCurrentTrack();
+    if (currentIndex === null) return;
+
+    const nextIndex = currentIndex + 1;
+
+    const nextAudio = currentList[nextIndex];
+    if (nextAudio) {
+      await TrackPlayer.skipToNext();
+      dispatch(updateOnGoingAudio(onGoingList[nextIndex]));
+    }
+  };
+
+  const onPreviousPress = async () => {
+    const currentList = await TrackPlayer.getQueue();
+    const currentIndex = await TrackPlayer.getCurrentTrack();
+    if (currentIndex === null) return;
+
+    const preIndex = currentIndex - 1;
+
+    const nextAudio = currentList[preIndex];
+    if (nextAudio) {
+      await TrackPlayer.skipToPrevious();
+      dispatch(updateOnGoingAudio(onGoingList[preIndex]));
+    }
+  };
+
+  return {
+    onAudioPress,
+    onNextPress,
+    onPreviousPress,
+    seekTo,
+    togglePlayPause,
+    skipTo,
+    isBusy,
+    isPalyerReady,
+    isPalying,
+  };
 };
 
 export default useAudioController;
