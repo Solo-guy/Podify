@@ -21,8 +21,8 @@
 14-->C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\main\AndroidManifest.xml:5:5-75
 14-->C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\main\AndroidManifest.xml:5:22-73
 15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-15-->[com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
-15-->[com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\fafd183758d3345458ca134509e8f09e\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
+15-->[com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\236929aa564a4c4dfa1b417642a2a2ae\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.125.0] C:\Users\M15R5\.gradle\caches\transforms-3\236929aa564a4c4dfa1b417642a2a2ae\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
 16
 17    <queries>
 17-->[:react-native-image-crop-picker] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
@@ -34,14 +34,14 @@
 20        </intent>
 21
 22        <package android:name="androidx.test.orchestrator" />
-22-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
-22-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
+22-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
+22-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
 23        <package android:name="androidx.test.services" />
-23-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
-23-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
+23-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
+23-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
 24        <package android:name="com.google.android.apps.common.testing.services" />
-24-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
-24-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\b1a9f9a1f7295f06edab9e5427c009eb\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
+24-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
+24-->[androidx.test:runner:1.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\6ca88d1ee3a117527243cb2fe20187c9\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
 25    </queries>
 26
 27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -54,19 +54,19 @@
 29-->[:react-native-track-player] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-track-player\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-77
 29-->[:react-native-track-player] C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\node_modules\react-native-track-player\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-74
 30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-30-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\M15R5\.gradle\caches\transforms-3\402cb08784bb547aa4b7d31d103925d5\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:5-79
-30-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\M15R5\.gradle\caches\transforms-3\402cb08784bb547aa4b7d31d103925d5\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:22-76
+30-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\M15R5\.gradle\caches\transforms-3\f02486aae2dc1f94b7ab50f6915d1f9c\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:5-79
+30-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\M15R5\.gradle\caches\transforms-3\f02486aae2dc1f94b7ab50f6915d1f9c\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:22-76
 31
 32    <permission
-32-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+32-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 33        android:name="com.podifyplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-33-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+33-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 34        android:protectionLevel="signature" />
-34-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+34-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 35
 36    <uses-permission android:name="com.podifyplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-36-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-36-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+36-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 37
 38    <application
 38-->C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\main\AndroidManifest.xml:7:5-26:19
@@ -75,7 +75,7 @@
 40        android:allowBackup="false"
 40-->C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\main\AndroidManifest.xml:12:7-34
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-41-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\63641971c3234518042212e1122f3870\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+41-->[androidx.core:core:1.9.0] C:\Users\M15R5\.gradle\caches\transforms-3\e8b2f39ece7c43ac91d2821ddeba84ed\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 42        android:debuggable="true"
 43        android:icon="@mipmap/ic_launcher"
 43-->C:\Users\M15R5\OneDrive\Desktop\Podify\PodifyPlayer\android\app\src\main\AndroidManifest.xml:10:7-41
@@ -173,25 +173,25 @@
 92        </receiver>
 93
 94        <provider
-94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+94-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 95            android:name="androidx.startup.InitializationProvider"
-95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+95-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 96            android:authorities="com.podifyplayer.androidx-startup"
-96-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+96-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 97            android:exported="false" >
-97-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+97-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 98            <meta-data
-98-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+98-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 99                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-99-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+99-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 100                android:value="androidx.startup" />
-100-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\afe90b3e28a9f868df6da608b58dbf88\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+100-->[androidx.emoji2:emoji2:1.0.0] C:\Users\M15R5\.gradle\caches\transforms-3\30102b16e64b2b966e993f978f0d77f3\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 101            <meta-data
-101-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\a5dc8019ed925c8b110cd396be525241\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+101-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\168829b299da31b5f39d19c1353bb79f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 102                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-102-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\a5dc8019ed925c8b110cd396be525241\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+102-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\168829b299da31b5f39d19c1353bb79f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 103                android:value="androidx.startup" />
-103-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\a5dc8019ed925c8b110cd396be525241\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+103-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\M15R5\.gradle\caches\transforms-3\168829b299da31b5f39d19c1353bb79f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 104        </provider>
 105    </application>
 106
