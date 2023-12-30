@@ -23,7 +23,7 @@ export const create: RequestHandler = async (req: CreateUser, res) => {
 
   const oldUser = await User.findOne({ email });
   if (oldUser)
-    return res.status(403).json({ error: "Email are already in user!" });
+    return res.status(403).json({ error: "Email is already in use!" });
 
   const user = await User.create({ name, email, password });
 

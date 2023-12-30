@@ -81,9 +81,7 @@ export const getFavorites: RequestHandler = async (req, res) => {
         },
       },
     },
-    {
-      $unwind: "$audioIds",
-    },
+    { $unwind: "$audioIds" },
     {
       $lookup: {
         from: "audios",
@@ -92,9 +90,7 @@ export const getFavorites: RequestHandler = async (req, res) => {
         as: "audioInfo",
       },
     },
-    {
-      $unwind: "$audioInfo",
-    },
+    { $unwind: "$audioInfo" },
     {
       $lookup: {
         from: "users",
@@ -103,9 +99,7 @@ export const getFavorites: RequestHandler = async (req, res) => {
         as: "ownerInfo",
       },
     },
-    {
-      $unwind: "$ownerInfo",
-    },
+    { $unwind: "$ownerInfo" },
     {
       $project: {
         _id: 0,

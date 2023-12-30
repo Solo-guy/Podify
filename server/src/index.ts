@@ -10,14 +10,9 @@ import playlistRouter from "./routers/playlist";
 import profileRouter from "./routers/profile";
 import historyRouter from "./routers/history";
 import "./utils/schedule";
-import { errorHandle } from "./middleware/error";
+import { errorHandler } from "./middleware/error";
 
 const app = express();
-
-const cors = require("cors");
-app.use(cors());
-
-app.use(cors({ origin: true, credentials: true }));
 
 // register our middleware
 app.use(express.json());
@@ -31,7 +26,7 @@ app.use("/playlist", playlistRouter);
 app.use("/profile", profileRouter);
 app.use("/history", historyRouter);
 
-app.use(errorHandle);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 8989;
 
