@@ -1,15 +1,13 @@
 import nodemailer from "nodemailer";
 import path from "path";
 
-import User from "#/models/user";
-import EmailVerificationToken from "#/models/emailVerificationToken";
 import {
   MAILTRAP_PASS,
   MAILTRAP_USER,
   SIGN_IN_URL,
   VERIFICATION_EMAIL,
 } from "#/utils/variables";
-import { generateToken } from "#/utils/helper";
+
 import { generateTemplate } from "#/mail/template";
 
 const generateMailTransporter = () => {
@@ -53,12 +51,12 @@ export const sendVerificationMail = async (token: string, profile: Profile) => {
     attachments: [
       {
         filename: "logo.png",
-        path: path.join(__dirname, "../mail/logo.png"),
+        path: path.join(__dirname, "../mail/images/logo.png"),
         cid: "logo",
       },
       {
         filename: "welcome.png",
-        path: path.join(__dirname, "../mail/welcome.png"),
+        path: path.join(__dirname, "../mail/images/welcome.png"),
         cid: "welcome",
       },
     ],
@@ -93,12 +91,12 @@ export const sendForgetPasswordLink = async (options: Options) => {
     attachments: [
       {
         filename: "logo.png",
-        path: path.join(__dirname, "../mail/logo.png"),
+        path: path.join(__dirname, "../mail/images/logo.png"),
         cid: "logo",
       },
       {
         filename: "forget_password.png",
-        path: path.join(__dirname, "../mail/forget_password.png"),
+        path: path.join(__dirname, "../mail/images/forget_password.png"),
         cid: "forget_password",
       },
     ],
