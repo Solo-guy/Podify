@@ -35,7 +35,7 @@ app.listen(PORT, () => {
 });
 
 /**
- * The plan and features
+ * The plan and feature
  * upload audio files
  * listen to single audio
  * add to favorites
