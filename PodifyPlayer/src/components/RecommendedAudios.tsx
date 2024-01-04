@@ -35,6 +35,8 @@ const RecommendedAudios: FC<Props> = ({onAudioLongPress, onAudioPress}) => {
       </PulseAnimationContainer>
     );
 
+  if (!data?.length) return null;
+
   return (
     <View>
       <Text style={styles.title}>You may like this</Text>
