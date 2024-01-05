@@ -11,6 +11,8 @@ interface Props {
 const RecommendedPlaylist: FC<Props> = ({onListPress}) => {
   const {data} = useFetchRecommendedPlaylist();
 
+  if (!data?.length) return null;
+
   return (
     <View>
       <Text style={styles.header}>Playlist for you</Text>
