@@ -2,10 +2,10 @@ import {getFromAsyncStorage, Keys} from '@utils/asyncStorage';
 import axios, {CreateAxiosDefaults} from 'axios';
 
 const client = axios.create({
-  baseURL: 'https://api.podifyapp.com',
+  baseURL: 'http://192.168.29.140:8989',
 });
 
-const baseURL = 'https://api.podifyapp.com';
+const baseURL = 'http://192.168.29.140:8989';
 
 type headers = CreateAxiosDefaults<any>['headers'];
 

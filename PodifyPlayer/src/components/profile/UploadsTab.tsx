@@ -3,6 +3,7 @@ import {NavigationProp, useNavigation} from '@react-navigation/native';
 import AudioListItem from '@ui/AudioListItem';
 import AudioListLoadingUI from '@ui/AudioListLoadingUI';
 import EmptyRecords from '@ui/EmptyRecords';
+import OptionSelector from '@ui/OptionSelector';
 import colors from '@utils/colors';
 import {FC, useState} from 'react';
 import {
@@ -78,10 +79,13 @@ const UploadsTab: FC<Props> = props => {
         ]}
         renderItem={item => {
           return (
-            <Pressable onPress={item.onPress} style={styles.optionContainer}>
-              <AntDesing size={24} color={colors.PRIMARY} name={item.icon} />
-              <Text style={styles.optionLabel}>{item.title}</Text>
-            </Pressable>
+            <OptionSelector
+              icon={
+                <AntDesing size={24} color={colors.PRIMARY} name={item.icon} />
+              }
+              label={item.title}
+              onPress={item.onPress}
+            />
           );
         }}
       />
